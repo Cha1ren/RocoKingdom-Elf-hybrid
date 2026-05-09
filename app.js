@@ -71,7 +71,7 @@ function renderGrid(containerId, role) {
     card.dataset.role = role;
 
     card.innerHTML = `
-      <img src="${img.file}" alt="${img.label}" loading="lazy" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><rect fill=%22%23eee%22 width=%22200%22 height=%22200%22/><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23aaa%22 font-size=%2216%22>${img.label}</text></svg>'">
+      <img src="${img.file}" alt="${img.label}" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><rect fill=%22%23eee%22 width=%22200%22 height=%22200%22/><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23aaa%22 font-size=%2216%22>${img.label}</text></svg>'">
       <div class="card-label">${img.label}</div>
     `;
 
@@ -183,33 +183,17 @@ function showResult() {
   const resultSection = document.getElementById("result-section");
   const resultImage = document.getElementById("result-image");
   const resultMessage = document.getElementById("result-message");
-  const loadingSpinner = document.getElementById("loading-spinner");
 
   if (rule) {
     resultMessage.textContent = rule.message || "找到结果！";
-
-    // 显示加载动画，隐藏结果图片
-    loadingSpinner.style.display = "flex";
-    resultImage.style.display = "none";
-
-    // 设置图片地址，开始加载
     resultImage.src = rule.result;
-
-    // 图片加载成功
-    resultImage.onload = function() {
-      loadingSpinner.style.display = "none";
-      resultImage.style.display = "block";
-    };
-
-    // 图片加载失败
+    resultImage.style.display = "block";
     resultImage.onerror = function() {
-      loadingSpinner.style.display = "none";
-      resultImage.style.display = "none";
+      this.style.display = "none";
       resultMessage.textContent = (rule.message || "") + "（提示：结果图片文件未找到，请检查图片路径是否正确）";
     };
   } else {
     resultMessage.textContent = siteConfig.defaultMessage || "没有找到对应的结果图片，请换个组合试试~";
-    loadingSpinner.style.display = "none";
     resultImage.style.display = "none";
   }
 
