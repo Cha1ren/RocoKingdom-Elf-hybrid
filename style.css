@@ -216,6 +216,38 @@ main {
 }
 
 /* ===========================
+   结果区域加载动画
+   =========================== */
+#loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #e0e0e0;
+  border-top: 5px solid #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+  margin-top: 15px;
+  color: #667eea;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+/* ===========================
    底部页脚
    =========================== */
 footer {
