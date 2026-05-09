@@ -1,0 +1,1251 @@
+{
+  "siteTitle": "洛克王国精灵融合杂交器",
+  "siteSubtitle": "选择两只精灵，看看他们融合后的样子！",
+  "selectableImages": [
+    {
+      "id": "迪莫",
+      "label": "迪莫",
+      "file": "images/selectable/dimo.png"
+    },
+    {
+      "id": "喵喵",
+      "label": "喵喵",
+      "file": "images/selectable/miaomiao.png"
+    },
+    {
+      "id": "火花",
+      "label": "火花",
+      "file": "images/selectable/huohua.png"
+    },
+    {
+      "id": "水蓝蓝",
+      "label": "水蓝蓝",
+      "file": "images/selectable/shuilanlan.png"
+    },
+    {
+      "id": "鸭吉吉",
+      "label": "鸭吉吉",
+      "file": "images/selectable/yajiji.png"
+    },
+    {
+      "id": "阿米亚特",
+      "label": "阿米亚特",
+      "file": "images/selectable/amiyate.png"
+    },
+    {
+      "id": "恶魔丁",
+      "label": "恶魔丁",
+      "file": "images/selectable/emoding.png"
+    },
+    {
+      "id": "恶魔狼",
+      "label": "恶魔狼",
+      "file": "images/selectable/emolang.png"
+    },
+    {
+      "id": "粉星仔",
+      "label": "粉星仔",
+      "file": "images/selectable/fenxingzai.png"
+    },
+    {
+      "id": "呼呼猪",
+      "label": "呼呼猪",
+      "file": "images/selectable/huhuzhu.png"
+    },
+    {
+      "id": "护主犬",
+      "label": "护主犬",
+      "file": "images/selectable/huzhuquan.png"
+    },
+    {
+      "id": "机械方方",
+      "label": "机械方方",
+      "file": "images/selectable/jixiefangfang.png"
+    },
+    {
+      "id": "菊花梨",
+      "label": "菊花梨",
+      "file": "images/selectable/juhuali.png"
+    },
+    {
+      "id": "拉特",
+      "label": "拉特",
+      "file": "images/selectable/late.png"
+    },
+    {
+      "id": "帽兜娃娃",
+      "label": "帽兜娃娃",
+      "file": "images/selectable/maodouwawa.png"
+    },
+    {
+      "id": "小独角兽",
+      "label": "小独角兽",
+      "file": "images/selectable/xiaodujiaoshou.png"
+    },
+    {
+      "id": "小里奥",
+      "label": "小里奥",
+      "file": "images/selectable/xiaoliao.png"
+    },
+    {
+      "id": "小帕尔",
+      "label": "小帕尔",
+      "file": "images/selectable/xiaopaer.png"
+    },
+    {
+      "id": "月牙雪熊",
+      "label": "月牙雪熊",
+      "file": "images/selectable/yueyaxuexiong.png"
+    },
+    {
+      "id": "治愈兔",
+      "label": "治愈兔",
+      "file": "images/selectable/zhiyutu.png"
+    }
+
+  ],
+  "rules": [
+    {
+      "input1": "迪莫",
+      "input2": "火花",
+      "result": "images/results/dimohuohua.png",
+      "message": "迪火！"
+    },
+    {
+      "input1": "迪莫",
+      "input2": "喵喵",
+      "result": "images/results/dimomiaomiao.png",
+      "message": "迪猫！"
+    },
+    {
+      "input1": "迪莫",
+      "input2": "鸭吉吉",
+      "result": "images/results/dimoyajiji.png",
+      "message": "莫吉吉！"
+    },
+    {
+      "input1": "迪莫",
+      "input2": "水蓝蓝",
+      "result": "images/results/dimoshuilanlan.png",
+      "message": "水莫！"
+    },
+    {
+      "input1": "迪莫",
+      "input2": "阿米亚特",
+      "result": "images/results/dimoamiyate.png",
+      "message": "迪米亚莫！"
+    },
+    {
+      "input1": "迪莫",
+      "input2": "恶魔丁",
+      "result": "images/results/dimoemoding.png",
+      "message": "恶莫迪！"
+    },
+    {
+      "input1": "迪莫",
+      "input2": "恶魔狼",
+      "result": "images/results/dimoemolang.png",
+      "message": "恶莫狼！"
+    },
+    {
+      "input1": "迪莫",
+      "input2": "粉星仔",
+      "result": "images/results/dimofenxingzai.png",
+      "message": "粉迪仔！"
+    },
+    {
+      "input1": "迪莫",
+      "input2": "呼呼猪",
+      "result": "images/results/dimohuhuzhu.png",
+      "message": "呼呼莫！"
+    },
+    {
+      "input1": "迪莫",
+      "input2": "护主犬",
+      "result": "images/results/dimohuzhuquan.png",
+      "message": "护主莫！"
+    },
+    {
+      "input1": "迪莫",
+      "input2": "机械方方",
+      "result": "images/results/dimojixiefangfang.png",
+      "message": "迪莫方方！"
+    },
+    {
+      "input1": "迪莫",
+      "input2": "菊花梨",
+      "result": "images/results/dimojuhuali.png",
+      "message": "菊花迪！"
+    },
+    {
+      "input1": "迪莫",
+      "input2": "拉特",
+      "result": "images/results/dimolate.png",
+      "message": "拉莫！"
+    },
+    {
+      "input1": "迪莫",
+      "input2": "帽兜娃娃",
+      "result": "images/results/dimomaodouwawa.png",
+      "message": "莫兜娃娃！"
+    },
+    {
+      "input1": "迪莫",
+      "input2": "小独角兽",
+      "result": "images/results/dimoxiaodujiaoshou.png",
+      "message": "小迪角兽！"
+    },
+    {
+      "input1": "迪莫",
+      "input2": "小里奥",
+      "result": "images/results/dimoxiaoliao.png",
+      "message": "迪奥！"
+    },
+    {
+      "input1": "迪莫",
+      "input2": "小帕尔",
+      "result": "images/results/dimoxiaopaer.png",
+      "message": "帕尔莫！"
+    },
+    {
+      "input1": "迪莫",
+      "input2": "月牙雪熊",
+      "result": "images/results/dimoyueyaxuexiong.png",
+      "message": "莫月雪！"
+    },
+    {
+      "input1": "迪莫",
+      "input2": "治愈兔",
+      "result": "images/results/dimozhiyutu.png",
+      "message": "治愈莫！"
+    },
+    {
+      "input1": "喵喵",
+      "input2": "火花",
+      "result": "images/results/huohuamiaomiao.png",
+      "message": "火猫！"
+    },
+    {
+      "input1": "喵喵",
+      "input2": "水蓝蓝",
+      "result": "images/results/miaomiaoshuilanlan.png",
+      "message": "水喵喵！"
+    },
+    {
+      "input1": "喵喵",
+      "input2": "鸭吉吉",
+      "result": "images/results/yajijimiaomiao.png",
+      "message": "喵吉吉！"
+    },
+    {
+      "input1": "喵喵",
+      "input2": "阿米亚特",
+      "result": "images/results/amiyatemiaomiao.png",
+      "message": "喵咪亚特！"
+    },
+    {
+      "input1": "喵喵",
+      "input2": "恶魔丁",
+      "result": "images/results/emodingmiaomiao.png",
+      "message": "恶喵丁！"
+    },
+    {
+      "input1": "喵喵",
+      "input2": "恶魔狼",
+      "result": "images/results/emolangmiaomiao.png",
+      "message": "恶魔喵！"
+    },
+    {
+      "input1": "喵喵",
+      "input2": "粉星仔",
+      "result": "images/results/fenxingzaimiaomiao.png",
+      "message": "粉喵仔！"
+    },
+    {
+      "input1": "喵喵",
+      "input2": "呼呼猪",
+      "result": "images/results/huhuzhumiaomiao.png",
+      "message": "喵喵猪！"
+    },
+    {
+      "input1": "喵喵",
+      "input2": "护主犬",
+      "result": "images/results/huzhuquanmiaomiao.png",
+      "message": "护主猫！"
+    },
+    {
+      "input1": "喵喵",
+      "input2": "机械方方",
+      "result": "images/results/jixiefangfangmiaomiao.png",
+      "message": "机械喵喵！"
+    },
+    {
+      "input1": "喵喵",
+      "input2": "菊花梨",
+      "result": "images/results/juhualimiaomiao.png",
+      "message": "梨花猫！"
+    },
+    {
+      "input1": "喵喵",
+      "input2": "拉特",
+      "result": "images/results/latemiaomiao.png",
+      "message": "喵特！"
+    },
+    {
+      "input1": "喵喵",
+      "input2": "帽兜娃娃",
+      "result": "images/results/maodouwawamiaomiao.png",
+      "message": "帽兜喵喵！"
+    },
+    {
+      "input1": "喵喵",
+      "input2": "小独角兽",
+      "result": "images/results/miaomiaoxiaodujiaoshou.png",
+      "message": "小独角喵！"
+    },
+    {
+      "input1": "喵喵",
+      "input2": "小里奥",
+      "result": "images/results/miaomiaoxiaoliao.png",
+      "message": "小里喵！"
+    },
+    {
+      "input1": "喵喵",
+      "input2": "小帕尔",
+      "result": "images/results/miaomiaoxiaopaer.png",
+      "message": "小帕喵！"
+    },
+    {
+      "input1": "喵喵",
+      "input2": "月牙雪熊",
+      "result": "images/results/miaomiaoyueyaxuexiong.png",
+      "message": "月牙雪喵！"
+    },
+    {
+      "input1": "喵喵",
+      "input2": "治愈兔",
+      "result": "images/results/miaomiaozhiyutu.png",
+      "message": "治愈喵！"
+    },
+    {
+      "input1": "火花",
+      "input2": "水蓝蓝",
+      "result": "images/results/huohuashuilanlan.png",
+      "message": "火蓝蓝！"
+    },
+    {
+      "input1": "火花",
+      "input2": "鸭吉吉",
+      "result": "images/results/yajijihuohua.png",
+      "message": "火吉吉！"
+    },
+    {
+      "input1": "火花",
+      "input2": "阿米亚特",
+      "result": "images/results/amiyatehuohua.png",
+      "message": "火米亚特！"
+    },
+    {
+      "input1": "火花",
+      "input2": "恶魔丁",
+      "result": "images/results/emodinghuohua.png",
+      "message": "恶火丁！"
+    },
+    {
+      "input1": "火花",
+      "input2": "恶魔狼",
+      "result": "images/results/emolanghuohua.png",
+      "message": "恶火狼！"
+    },
+    {
+      "input1": "火花",
+      "input2": "粉星仔",
+      "result": "images/results/fenxingzaihuohua.png",
+      "message": "火星仔！"
+    },
+    {
+      "input1": "火花",
+      "input2": "呼呼猪",
+      "result": "images/results/huhuzhuhuohua.png",
+      "message": "火火猪！"
+    },
+    {
+      "input1": "火花",
+      "input2": "护主犬",
+      "result": "images/results/huohuahuzhuquan.png",
+      "message": "火犬！"
+    },
+    {
+      "input1": "火花",
+      "input2": "机械方方",
+      "result": "images/results/huohuajixiefangfang.png",
+      "message": "火花方方！"
+    },
+    {
+      "input1": "火花",
+      "input2": "菊花梨",
+      "result": "images/results/huohuajuhuali.png",
+      "message": "火花梨！"
+    },
+    {
+      "input1": "火花",
+      "input2": "拉特",
+      "result": "images/results/huohualate.png",
+      "message": "花特！"
+    },
+    {
+      "input1": "火花",
+      "input2": "帽兜娃娃",
+      "result": "images/results/huohuamaodouwawa.png",
+      "message": "火花娃娃！"
+    },
+    {
+      "input1": "火花",
+      "input2": "小独角兽",
+      "result": "images/results/huohuaxiaodujiaoshou.png",
+      "message": "火角兽！"
+    },
+    {
+      "input1": "火花",
+      "input2": "小里奥",
+      "result": "images/results/huohuaxiaoliao.png",
+      "message": "火里奥！"
+    },
+    {
+      "input1": "火花",
+      "input2": "小帕尔",
+      "result": "images/results/huohuaxiaopaer.png",
+      "message": "火帕尔！"
+    },
+    {
+      "input1": "火花",
+      "input2": "月牙雪熊",
+      "result": "images/results/huohuayueyaxuexiong.png",
+      "message": "月花火熊！"
+    },
+    {
+      "input1": "火花",
+      "input2": "治愈兔",
+      "result": "images/results/huohuazhiyutu.png",
+      "message": "火花兔！"
+    },
+    {
+      "input1": "水蓝蓝",
+      "input2": "鸭吉吉",
+      "result": "images/results/yajijishuilanlan.png",
+      "message": "水吉吉！"
+    },
+    {
+      "input1": "水蓝蓝",
+      "input2": "阿米亚特",
+      "result": "images/results/amiyateshuilanlan.png",
+      "message": "阿水亚特！"
+    },
+    {
+      "input1": "水蓝蓝",
+      "input2": "恶魔丁",
+      "result": "images/results/emodingshuilanlan.png",
+      "message": "水魔丁！"
+    },
+    {
+      "input1": "水蓝蓝",
+      "input2": "恶魔狼",
+      "result": "images/results/emolangshuilanlan.png",
+      "message": "恶魔蓝！"
+    },
+    {
+      "input1": "水蓝蓝",
+      "input2": "粉星仔",
+      "result": "images/results/fenxingzaishuilanlan.png",
+      "message": "水星仔！"
+    },
+    {
+      "input1": "水蓝蓝",
+      "input2": "呼呼猪",
+      "result": "images/results/shuilanlanhuhuzhu.png",
+      "message": "呼蓝猪！"
+    },
+    {
+      "input1": "水蓝蓝",
+      "input2": "护主犬",
+      "result": "images/results/huzhuquanshuilanlan.png",
+      "message": "水蓝犬！"
+    },
+    {
+      "input1": "水蓝蓝",
+      "input2": "机械方方",
+      "result": "images/results/jixiefangfangshuilanlan.png",
+      "message": "水蓝方！"
+    },
+    {
+      "input1": "水蓝蓝",
+      "input2": "菊花梨",
+      "result": "images/results/juhualishuilanlan.png",
+      "message": "水花梨！"
+    },
+    {
+      "input1": "水蓝蓝",
+      "input2": "拉特",
+      "result": "images/results/lateshuilanlan.png",
+      "message": "蓝特！"
+    },
+    {
+      "input1": "水蓝蓝",
+      "input2": "帽兜娃娃",
+      "result": "images/results/maodouwawashuilanlan.png",
+      "message": "水娃娃！"
+    },
+    {
+      "input1": "水蓝蓝",
+      "input2": "小独角兽",
+      "result": "images/results/shuilanlanxiaodujiaoshou.png",
+      "message": "蓝独兽！"
+    },
+    {
+      "input1": "水蓝蓝",
+      "input2": "小里奥",
+      "result": "images/results/shuilanlanxiaoliao.png",
+      "message": "水里蓝！"
+    },
+    {
+      "input1": "水蓝蓝",
+      "input2": "小帕尔",
+      "result": "images/results/shuilanlanxiaopaer.png",
+      "message": "小帕蓝！"
+    },
+    {
+      "input1": "水蓝蓝",
+      "input2": "月牙雪熊",
+      "result": "images/results/shuilanlanyueyaxuexiong.png",
+      "message": "水月蓝熊！"
+    },
+    {
+      "input1": "水蓝蓝",
+      "input2": "治愈兔",
+      "result": "images/results/shuilanlanzhiyutu.png",
+      "message": "水蓝兔！"
+    },
+    {
+      "input1": "鸭吉吉",
+      "input2": "阿米亚特",
+      "result": "images/results/yajijiamiyate.png",
+      "message": "吉米鸭特！"
+    },
+    {
+      "input1": "鸭吉吉",
+      "input2": "恶魔丁",
+      "result": "images/results/yajijiemoding.png",
+      "message": "鸭魔吉！"
+    },
+    {
+      "input1": "鸭吉吉",
+      "input2": "恶魔狼",
+      "result": "images/results/yajijiemolang.png",
+      "message": "恶魔鸭！"
+    },
+    {
+      "input1": "鸭吉吉",
+      "input2": "粉星仔",
+      "result": "images/results/yajijifenxingzai.png",
+      "message": "吉星仔！"
+    },
+    {
+      "input1": "鸭吉吉",
+      "input2": "呼呼猪",
+      "result": "images/results/yajijihuhuzhu.png",
+      "message": "鸭呼呼！"
+    },
+    {
+      "input1": "鸭吉吉",
+      "input2": "护主犬",
+      "result": "images/results/yajijihuzhuquan.png",
+      "message": "护主鸭！"
+    },
+    {
+      "input1": "鸭吉吉",
+      "input2": "机械方方",
+      "result": "images/results/yajijijixiefangfang.png",
+      "message": "机械吉吉！"
+    },
+    {
+      "input1": "鸭吉吉",
+      "input2": "菊花梨",
+      "result": "images/results/yajijijuhuali.png",
+      "message": "鸭梨！"
+    },
+    {
+      "input1": "鸭吉吉",
+      "input2": "拉特",
+      "result": "images/results/yajijilate.png",
+      "message": "拉吉！"
+    },
+    {
+      "input1": "鸭吉吉",
+      "input2": "帽兜娃娃",
+      "result": "images/results/yajijimaodouwawa.png",
+      "message": "吉娃娃！"
+    },
+    {
+      "input1": "鸭吉吉",
+      "input2": "小独角兽",
+      "result": "images/results/yajijixiaodujiaoshou.png",
+      "message": "小吉角鸭！"
+    },
+    {
+      "input1": "鸭吉吉",
+      "input2": "小里奥",
+      "result": "images/results/yajijixiaoliao.png",
+      "message": "小吉奥！"
+    },
+    {
+      "input1": "鸭吉吉",
+      "input2": "小帕尔",
+      "result": "images/results/yajijixiaopaer.png",
+      "message": "小吉尔！"
+    },
+    {
+      "input1": "鸭吉吉",
+      "input2": "月牙雪熊",
+      "result": "images/results/yajijiyueyaxuexiong.png",
+      "message": "月吉雪鸭！"
+    },
+    {
+      "input1": "鸭吉吉",
+      "input2": "治愈兔",
+      "result": "images/results/yajijizhiyutu.png",
+      "message": "治愈鸭！"
+    },
+    {
+      "input1": "阿米亚特",
+      "input2": "恶魔丁",
+      "result": "images/results/amiyateemoding.png",
+      "message": "阿魔亚丁！"
+    },
+    {
+      "input1": "阿米亚特",
+      "input2": "恶魔狼",
+      "result": "images/results/amiyateemolang.png",
+      "message": "阿米魔狼！"
+    },
+    {
+      "input1": "阿米亚特",
+      "input2": "粉星仔",
+      "result": "images/results/amiyatefenxingzai.png",
+      "message": "粉星亚特！"
+    },
+    {
+      "input1": "阿米亚特",
+      "input2": "呼呼猪",
+      "result": "images/results/amiyatehuhuzhu.png",
+      "message": "阿米亚猪！"
+    },
+    {
+      "input1": "阿米亚特",
+      "input2": "护主犬",
+      "result": "images/results/amiyatehuzhuquan.png",
+      "message": "阿米亚犬！"
+    },
+    {
+      "input1": "阿米亚特",
+      "input2": "机械方方",
+      "result": "images/results/amiyatejixiefangfang.png",
+      "message": "阿米方方！"
+    },
+    {
+      "input1": "阿米亚特",
+      "input2": "菊花梨",
+      "result": "images/results/amiyatejuhuali.png",
+      "message": "阿米亚梨！"
+    },
+    {
+      "input1": "阿米亚特",
+      "input2": "拉特",
+      "result": "images/results/amiyatelate.png",
+      "message": "阿米拉特！"
+    },
+    {
+      "input1": "阿米亚特",
+      "input2": "帽兜娃娃",
+      "result": "images/results/amiyatemaodouwawa.png",
+      "message": "阿米娃娃！"
+    },
+    {
+      "input1": "阿米亚特",
+      "input2": "小独角兽",
+      "result": "images/results/amiyatexiaodujiaoshou.png",
+      "message": "独角亚特！"
+    },
+    {
+      "input1": "阿米亚特",
+      "input2": "小里奥",
+      "result": "images/results/amiyatexiaoliao.png",
+      "message": "阿里奥特！"
+    },
+    {
+      "input1": "阿米亚特",
+      "input2": "小帕尔",
+      "result": "images/results/amiyatexiaopaer.png",
+      "message": "阿帕尔特！"
+    },
+    {
+      "input1": "阿米亚特",
+      "input2": "月牙雪熊",
+      "result": "images/results/amiyateyueyaxuexiong.png",
+      "message": "月米亚熊！"
+    },
+    {
+      "input1": "阿米亚特",
+      "input2": "治愈兔",
+      "result": "images/results/amiyatezhiyutu.png",
+      "message": "阿米亚兔！"
+    },
+    {
+      "input1": "恶魔丁",
+      "input2": "恶魔狼",
+      "result": "images/results/emodingemolang.png",
+      "message": "恶丁狼！"
+    },
+    {
+      "input1": "恶魔丁",
+      "input2": "粉星仔",
+      "result": "images/results/emodingfenxingzai.png",
+      "message": "粉丁仔！"
+    },
+    {
+      "input1": "恶魔丁",
+      "input2": "呼呼猪",
+      "result": "images/results/emodinghuhuzhu.png",
+      "message": "恶丁猪！"
+    },
+    {
+      "input1": "恶魔丁",
+      "input2": "护主犬",
+      "result": "images/results/emodinghuzhuquan.png",
+      "message": "恶丁犬！"
+    },
+    {
+      "input1": "恶魔丁",
+      "input2": "机械方方",
+      "result": "images/results/emodingjixiefangfang.png",
+      "message": "机械丁丁！"
+    },
+    {
+      "input1": "恶魔丁",
+      "input2": "菊花梨",
+      "result": "images/results/emodingjuhuali.png",
+      "message": "菊花丁！"
+    },
+    {
+      "input1": "恶魔丁",
+      "input2": "拉特",
+      "result": "images/results/emodinglate.png",
+      "message": "恶拉丁！"
+    },
+    {
+      "input1": "恶魔丁",
+      "input2": "帽兜娃娃",
+      "result": "images/results/emodingmaodouwawa.png",
+      "message": "帽兜丁丁！"
+    },
+    {
+      "input1": "恶魔丁",
+      "input2": "小独角兽",
+      "result": "images/results/emodingxiaodujiaoshou.png",
+      "message": "小恶丁兽！"
+    },
+    {
+      "input1": "恶魔丁",
+      "input2": "小里奥",
+      "result": "images/results/emodingxiaoliao.png",
+      "message": "小奥丁！"
+    },
+    {
+      "input1": "恶魔丁",
+      "input2": "小帕尔",
+      "result": "images/results/emodingxiaopaer.png",
+      "message": "恶帕丁！"
+    },
+    {
+      "input1": "恶魔丁",
+      "input2": "月牙雪熊",
+      "result": "images/results/emodingyueyaxuexiong.png",
+      "message": "月魔雪熊！"
+    },
+    {
+      "input1": "恶魔丁",
+      "input2": "治愈兔",
+      "result": "images/results/emodingzhiyutu.png",
+      "message": "魔兔丁！"
+    },
+    {
+      "input1": "恶魔狼",
+      "input2": "粉星仔",
+      "result": "images/results/emolangfenxingzai.png",
+      "message": "粉狼仔！"
+    },
+    {
+      "input1": "恶魔狼",
+      "input2": "呼呼猪",
+      "result": "images/results/emolanghuhuzhu.png",
+      "message": "恶魔猪！"
+    },
+    {
+      "input1": "恶魔狼",
+      "input2": "护主犬",
+      "result": "images/results/emolanghuzhuquan.png",
+      "message": "护主狼！"
+    },
+    {
+      "input1": "恶魔狼",
+      "input2": "机械方方",
+      "result": "images/results/emolangjixiefangfang.png",
+      "message": "机械魔狼！"
+    },
+    {
+      "input1": "恶魔狼",
+      "input2": "菊花梨",
+      "result": "images/results/emolangjuhuali.png",
+      "message": "菊花狼！"
+    },
+    {
+      "input1": "恶魔狼",
+      "input2": "拉特",
+      "result": "images/results/emolanglate.png",
+      "message": "特魔狼！"
+    },
+    {
+      "input1": "恶魔狼",
+      "input2": "帽兜娃娃",
+      "result": "images/results/emolangmaodouwawa.png",
+      "message": "帽兜狼！"
+    },
+    {
+      "input1": "恶魔狼",
+      "input2": "小独角兽",
+      "result": "images/results/emolangxiaodujiaoshou.png",
+      "message": "小独角狼！"
+    },
+    {
+      "input1": "恶魔狼",
+      "input2": "小里奥",
+      "result": "images/results/emolangxiaoliao.png",
+      "message": "小里狼！"
+    },
+    {
+      "input1": "恶魔狼",
+      "input2": "小帕尔",
+      "result": "images/results/emolangxiaopaer.png",
+      "message": "小帕狼！"
+    },
+    {
+      "input1": "恶魔狼",
+      "input2": "月牙雪熊",
+      "result": "images/results/emolangyueyaxuexiong.png",
+      "message": "月牙魔狼！"
+    },
+    {
+      "input1": "恶魔狼",
+      "input2": "治愈兔",
+      "result": "images/results/emolangzhiyutu.png",
+      "message": "恶魔兔！"
+    },
+    {
+      "input1": "粉星仔",
+      "input2": "呼呼猪",
+      "result": "images/results/fenxingzaihuhuzhu.png",
+      "message": "粉星猪！"
+    },
+    {
+      "input1": "粉星仔",
+      "input2": "护主犬",
+      "result": "images/results/fenxingzaihuzhuquan.png",
+      "message": "粉星犬！"
+    },
+    {
+      "input1": "粉星仔",
+      "input2": "机械方方",
+      "result": "images/results/fenxingzaijixiefangfang.png",
+      "message": "粉星方方！"
+    },
+    {
+      "input1": "粉星仔",
+      "input2": "菊花梨",
+      "result": "images/results/fenxingzaijuhuali.png",
+      "message": "菊花仔！"
+    },
+    {
+      "input1": "粉星仔",
+      "input2": "拉特",
+      "result": "images/results/fenxingzailate.png",
+      "message": "粉特仔！"
+    },
+    {
+      "input1": "粉星仔",
+      "input2": "帽兜娃娃",
+      "result": "images/results/fenxingzaimaodouwawa.png",
+      "message": "粉星娃娃！"
+    },
+    {
+      "input1": "粉星仔",
+      "input2": "小独角兽",
+      "result": "images/results/fenxingzaixiaodujiaoshou.png",
+      "message": "小星兽！"
+    },
+    {
+      "input1": "粉星仔",
+      "input2": "小里奥",
+      "result": "images/results/fenxingzaixiaoliao.png",
+      "message": "小星奥！"
+    },
+    {
+      "input1": "粉星仔",
+      "input2": "小帕尔",
+      "result": "images/results/fenxingzaixiaopaer.png",
+      "message": "小帕星！"
+    },
+    {
+      "input1": "粉星仔",
+      "input2": "月牙雪熊",
+      "result": "images/results/fenxingzaiyueyaxuexiong.png",
+      "message": "粉星雪熊！"
+    },
+    {
+      "input1": "粉星仔",
+      "input2": "治愈兔",
+      "result": "images/results/fenxingzaizhiyutu.png",
+      "message": "粉星兔！"
+    },
+    {
+      "input1": "呼呼猪",
+      "input2": "护主犬",
+      "result": "images/results/huhuzhuhuzhuquan.png",
+      "message": "呼呼犬！"
+    },
+    {
+      "input1": "呼呼猪",
+      "input2": "机械方方",
+      "result": "images/results/huhuzhujixiefangfang.png",
+      "message": "机械呼呼！"
+    },
+    {
+      "input1": "呼呼猪",
+      "input2": "菊花梨",
+      "result": "images/results/huhuzhujuhuali.png",
+      "message": "呼呼梨！"
+    },
+    {
+      "input1": "呼呼猪",
+      "input2": "拉特",
+      "result": "images/results/huhuzhulate.png",
+      "message": "呼拉猪！"
+    },
+    {
+      "input1": "呼呼猪",
+      "input2": "帽兜娃娃",
+      "result": "images/results/huhuzhumaodouwawa.png",
+      "message": "帽兜呼呼！"
+    },
+    {
+      "input1": "呼呼猪",
+      "input2": "小独角兽",
+      "result": "images/results/huhuzhuxiaodujiaoshou.png",
+      "message": "小独角猪！"
+    },
+    {
+      "input1": "呼呼猪",
+      "input2": "小里奥",
+      "result": "images/results/huhuzhuxiaoliao.png",
+      "message": "小奥猪！"
+    },
+    {
+      "input1": "呼呼猪",
+      "input2": "小帕尔",
+      "result": "images/results/huhuzhuxiaopaer.png",
+      "message": "小帕猪！"
+    },
+    {
+      "input1": "呼呼猪",
+      "input2": "月牙雪熊",
+      "result": "images/results/huhuzhuyueyaxuexiong.png",
+      "message": "呼呼雪猪！"
+    },
+    {
+      "input1": "呼呼猪",
+      "input2": "治愈兔",
+      "result": "images/results/huhuzhuzhiyutu.png",
+      "message": "治愈猪！"
+    },
+    {
+      "input1": "护主犬",
+      "input2": "机械方方",
+      "result": "images/results/huzhuquanjixiefangfang.png",
+      "message": "护主方方！"
+    },
+    {
+      "input1": "护主犬",
+      "input2": "菊花梨",
+      "result": "images/results/huzhuquanjuhuali.png",
+      "message": "菊花犬！"
+    },
+    {
+      "input1": "护主犬",
+      "input2": "拉特",
+      "result": "images/results/huzhuquanlate.png",
+      "message": "拉主犬！"
+    },
+    {
+      "input1": "护主犬",
+      "input2": "帽兜娃娃",
+      "result": "images/results/huzhuquanmaodouwawa.png",
+      "message": "护主娃娃！"
+    },
+    {
+      "input1": "护主犬",
+      "input2": "小独角兽",
+      "result": "images/results/huzhuquanxiaodujiaoshou.png",
+      "message": "小独角犬！"
+    },
+    {
+      "input1": "护主犬",
+      "input2": "小里奥",
+      "result": "images/results/huzhuquanxiaoliao.png",
+      "message": "护里奥！"
+    },
+    {
+      "input1": "护主犬",
+      "input2": "小帕尔",
+      "result": "images/results/huzhuquanxiaopaer.png",
+      "message": "小帕犬！"
+    },
+    {
+      "input1": "护主犬",
+      "input2": "月牙雪熊",
+      "result": "images/results/huzhuquanyueyaxuexiong.png",
+      "message": "月牙雪犬！"
+    },
+    {
+      "input1": "护主犬",
+      "input2": "治愈兔",
+      "result": "images/results/huzhuquanzhiyutu.png",
+      "message": "护主兔！"
+    },
+    {
+      "input1": "机械方方",
+      "input2": "菊花梨",
+      "result": "images/results/jixiefangfangjuhuali.png",
+      "message": "机械梨梨！"
+    },
+    {
+      "input1": "机械方方",
+      "input2": "拉特",
+      "result": "images/results/jixiefangfanglate.png",
+      "message": "机械拉拉！"
+    },
+    {
+      "input1": "机械方方",
+      "input2": "帽兜娃娃",
+      "result": "images/results/jixiefangfangmaodouwawa.png",
+      "message": "机械娃娃！"
+    },
+    {
+      "input1": "机械方方",
+      "input2": "小独角兽",
+      "result": "images/results/jixiefangfangxiaodujiaoshou.png",
+      "message": "机械独角兽！"
+    },
+    {
+      "input1": "机械方方",
+      "input2": "小里奥",
+      "result": "images/results/jixiefangfangxiaoliao.png",
+      "message": "机械里奥！"
+    },
+    {
+      "input1": "机械方方",
+      "input2": "小帕尔",
+      "result": "images/results/jixiefangfangxiaopaer.png",
+      "message": "机械帕尔！"
+    },
+    {
+      "input1": "机械方方",
+      "input2": "月牙雪熊",
+      "result": "images/results/jixiefangfangyueyaxuexiong.png",
+      "message": "月牙方方！"
+    },
+    {
+      "input1": "机械方方",
+      "input2": "治愈兔",
+      "result": "images/results/jixiefangfangzhiyutu.png",
+      "message": "治愈方方！"
+    },
+    {
+      "input1": "菊花梨",
+      "input2": "拉特",
+      "result": "images/results/juhualilate.png",
+      "message": "菊拉梨！"
+    },
+    {
+      "input1": "菊花梨",
+      "input2": "帽兜娃娃",
+      "result": "images/results/juhualimaodouwawa.png",
+      "message": "菊花娃娃！"
+    },
+    {
+      "input1": "菊花梨",
+      "input2": "小独角兽",
+      "result": "images/results/juhualixiaodujiaoshou.png",
+      "message": "小菊花兽！"
+    },
+    {
+      "input1": "菊花梨",
+      "input2": "小里奥",
+      "result": "images/results/juhualixiaoliao.png",
+      "message": "小梨奥！"
+    },
+    {
+      "input1": "菊花梨",
+      "input2": "小帕尔",
+      "result": "images/results/juhualixiaopaer.png",
+      "message": "小帕梨！"
+    },
+    {
+      "input1": "菊花梨",
+      "input2": "月牙雪熊",
+      "result": "images/results/juhualiyueyaxuexiong.png",
+      "message": "菊花雪熊！"
+    },
+    {
+      "input1": "菊花梨",
+      "input2": "治愈兔",
+      "result": "images/results/juhualizhiyutu.png",
+      "message": "治愈梨！"
+    },
+    {
+      "input1": "拉特",
+      "input2": "帽兜娃娃",
+      "result": "images/results/latemaodouwawa.png",
+      "message": "帽兜拉拉！"
+    },
+    {
+      "input1": "拉特",
+      "input2": "小独角兽",
+      "result": "images/results/latexiaodujiaoshou.png",
+      "message": "小角拉兽！"
+    },
+    {
+      "input1": "拉特",
+      "input2": "小里奥",
+      "result": "images/results/latexiaoliao.png",
+      "message": "小拉奥！"
+    },
+    {
+      "input1": "拉特",
+      "input2": "小帕尔",
+      "result": "images/results/latexiaopaer.png",
+      "message": "小拉尔！"
+    },
+    {
+      "input1": "拉特",
+      "input2": "月牙雪熊",
+      "result": "images/results/lateyueyaxuexiong.png",
+      "message": "月拉雪特！"
+    },
+    {
+      "input1": "拉特",
+      "input2": "治愈兔",
+      "result": "images/results/latezhiyutu.png",
+      "message": "治愈特！"
+    },
+    {
+      "input1": "帽兜娃娃",
+      "input2": "小独角兽",
+      "result": "images/results/maodouwawaxiaodujiaoshou.png",
+      "message": "小帽兜兽！"
+    },
+    {
+      "input1": "帽兜娃娃",
+      "input2": "小里奥",
+      "result": "images/results/maodouwawaxiaoliao.png",
+      "message": "帽兜奥奥！"
+    },
+    {
+      "input1": "帽兜娃娃",
+      "input2": "小帕尔",
+      "result": "images/results/maodouwawaxiaopaer.png",
+      "message": "小帽兜兽！"
+    },
+    {
+      "input1": "帽兜娃娃",
+      "input2": "月牙雪熊",
+      "result": "images/results/maodouwawayueyaxuexiong.png",
+      "message": "月雪娃娃！"
+    },
+    {
+      "input1": "帽兜娃娃",
+      "input2": "治愈兔",
+      "result": "images/results/maodouwawazhiyutu.png",
+      "message": "帽兜兔兔！"
+    },
+    {
+      "input1": "小独角兽",
+      "input2": "小里奥",
+      "result": "images/results/xiaodujiaoshouxiaoliao.png",
+      "message": "小里奥兽！"
+    },
+    {
+      "input1": "小独角兽",
+      "input2": "小帕尔",
+      "result": "images/results/xiaodujiaoshouxiaopaer.png",
+      "message": "小帕尔兽！"
+    },
+    {
+      "input1": "小独角兽",
+      "input2": "月牙雪熊",
+      "result": "images/results/xiaodujiaoshouyueyaxuexiong.png",
+      "message": "月牙雪兽！"
+    },
+    {
+      "input1": "小独角兽",
+      "input2": "治愈兔",
+      "result": "images/results/xiaodujiaoshouzhiyutu.png",
+      "message": "小治愈兽！"
+    },
+    {
+      "input1": "小里奥",
+      "input2": "小帕尔",
+      "result": "images/results/xiaoliaoxiaopaer.png",
+      "message": "小里尔！"
+    },
+    {
+      "input1": "小里奥",
+      "input2": "月牙雪熊",
+      "result": "images/results/xiaoliaoyueyaxuexiong.png",
+      "message": "月里雪奥！"
+    },
+    {
+      "input1": "小里奥",
+      "input2": "治愈兔",
+      "result": "images/results/xiaoliaozhiyutu.png",
+      "message": "小奥兔！"
+    },
+    {
+      "input1": "小帕尔",
+      "input2": "月牙雪熊",
+      "result": "images/results/xiaopaeryueyaxuexiong.png",
+      "message": "帕牙雪尔！"
+    },
+    {
+      "input1": "小帕尔",
+      "input2": "治愈兔",
+      "result": "images/results/xiaopaerzhiyutu.png",
+      "message": "小帕兔！"
+    },
+    {
+      "input1": "月牙雪熊",
+      "input2": "治愈兔",
+      "result": "images/results/yueyaxuexiongzhiyutu.png",
+      "message": "月牙雪兔！"
+    }
+
+  ],
+  "defaultMessage": "这两张图片没有对应结果，请选择其他组合试试~"
+}

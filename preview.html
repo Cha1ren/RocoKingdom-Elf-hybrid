@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>图片配对网站（预览版）</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      min-height: 100vh;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    header h1 { font-size: 2.2em; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+    header p { font-size: 1.1em; opacity: 0.9; }
+    main { max-width: 900px; margin: 30px auto; padding: 0 20px; }
+    .step-section {
+      background: white; border-radius: 16px; padding: 25px;
+      margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    .step-section h2 {
+      font-size: 1.3em; margin-bottom: 20px; color: #555;
+      padding-bottom: 10px; border-bottom: 2px solid #f0f0f0;
+    }
+    .image-grid { display: flex; flex-wrap: wrap; gap: 15px; }
+    .image-card {
+      cursor: pointer; border: 3px solid transparent; border-radius: 12px;
+      overflow: hidden; transition: all 0.25s ease;
+      width: calc(25% - 12px); min-width: 120px;
+      background: #f9f9f9; text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .image-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); border-color: #a0aec0; }
+    .image-card.selected { border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.3); transform: translateY(-3px); }
+    .image-card.disabled { opacity: 0.4; cursor: not-allowed; pointer-events: none; }
+    .image-card img { width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block; }
+    .image-card .card-label { padding: 8px; font-size: 0.9em; font-weight: bold; color: #555; }
+    .action-area { text-align: center; margin: 25px 0; }
+    #confirm-btn {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; border: none; padding: 14px 40px; font-size: 1.1em;
+      border-radius: 50px; cursor: pointer; transition: all 0.25s ease;
+      box-shadow: 0 4px 15px rgba(102,126,234,0.4);
+    }
+    #confirm-btn:hover:not(:disabled) { transform: translateY(-2px); }
+    #confirm-btn:disabled { background: #ccc; box-shadow: none; cursor: not-allowed; opacity: 0.7; }
+    #selection-hint { margin-top: 10px; color: #888; font-size: 0.95em; }
+    .result-section {
+      background: white; border-radius: 16px; padding: 30px;
+      margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      text-align: center; animation: fadeIn 0.5s ease;
+    }
+    @keyframes fadeIn { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+    .result-section h2 { font-size: 1.5em; margin-bottom: 15px; color: #555; }
+    .result-message { font-size: 1.2em; color: #667eea; font-weight: bold; margin-bottom: 20px; }
+    #result-image { max-width: 100%; max-height: 450px; border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.15); margin-bottom: 25px; }
+    #reset-btn {
+      background: white; color: #667eea; border: 2px solid #667eea;
+      padding: 12px 35px; font-size: 1em; border-radius: 50px;
+      cursor: pointer; transition: all 0.25s ease;
+    }
+    #reset-btn:hover { background: #667eea; color: white; transform: translateY(-2px); }
+    footer { text-align: center; padding: 20px; color: #999; font-size: 0.9em; }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.6em; }
+      .image-card { width: calc(50% - 8px); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="site-title">图片配对网站</h1>
+    <p id="site-subtitle">选择两张图片，发现它们的关系！</p>
+  </header>
+  <main>
+    <section class="step-section">
+      <h2>第一步：选择第一张图片</h2>
+      <div class="image-grid" id="grid-first"></div>
+    </section>
+    <section class="step-section">
+      <h2>第二步：选择第二张图片</h2>
+      <div class="image-grid" id="grid-second"></div>
+    </section>
+    <div class="action-area">
+      <button id="confirm-btn" disabled>查看结果 →</button>
+      <p id="selection-hint">请先选择两张不同的图片</p>
+    </div>
+    <section class="result-section" id="result-section" style="display:none;">
+      <h2>✨ 结果</h2>
+      <p id="result-message" class="result-message"></p>
+      <img id="result-image" src="" alt="结果图片" />
+      <br/>
+      <button id="reset-btn">重新选择</button>
+    </section>
+  </main>
+  <footer><p>由我亲手配置的图片配对网站 🎨</p></footer>
+
+<script>
+// 内嵌配置（预览版直接写在这里，避免浏览器跨域问题）
+const siteConfig = {
+  "siteTitle": "图片配对网站",
+  "siteSubtitle": "选择两张图片，发现它们的关系！",
+  "selectableImages": [
+    { "id": "A", "label": "图片A", "svgColor": "#FF6B6B", "emoji": "🌸" },
+    { "id": "B", "label": "图片B", "svgColor": "#4ECDC4", "emoji": "🌿" },
+    { "id": "C", "label": "图片C", "svgColor": "#45B7D1", "emoji": "🌊" },
+    { "id": "D", "label": "图片D", "svgColor": "#96CEB4", "emoji": "🍁" }
+  ],
+  "rules": [
+    { "input1": "A", "input2": "B", "svgColor": "#FF9A9E", "emoji": "💫", "message": "A和B组合在一起！" },
+    { "input1": "A", "input2": "C", "svgColor": "#A8EDEA", "emoji": "🌈", "message": "A和C产生了奇妙反应！" },
+    { "input1": "A", "input2": "D", "svgColor": "#FFECD2", "emoji": "🎭", "message": "A和D相遇了！" },
+    { "input1": "B", "input2": "C", "svgColor": "#D4FC79", "emoji": "🎪", "message": "B和C的组合！" },
+    { "input1": "B", "input2": "D", "svgColor": "#96E6A1", "emoji": "🎠", "message": "B和D在一起！" },
+    { "input1": "C", "input2": "D", "svgColor": "#F093FB", "emoji": "🎡", "message": "C和D的结果！" }
+  ],
+  "defaultMessage": "这两张图片没有对应结果，请选择其他组合试试~"
+};
+
+function makeSVGDataURL(label, color, emoji) {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+    <rect width="200" height="200" fill="${color}" rx="10"/>
+    <text x="100" y="85" text-anchor="middle" font-size="48">${emoji}</text>
+    <text x="100" y="128" text-anchor="middle" font-size="20" fill="white" font-weight="bold">${label}</text>
+    <text x="100" y="152" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.8)">示例图片</text>
+  </svg>`;
+  return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+}
+
+let selectedFirst = null, selectedSecond = null;
+
+document.getElementById("site-title").textContent = siteConfig.siteTitle;
+document.getElementById("site-subtitle").textContent = siteConfig.siteSubtitle;
+document.title = siteConfig.siteTitle;
+
+function renderGrid(containerId, role) {
+  const container = document.getElementById(containerId);
+  container.innerHTML = "";
+  siteConfig.selectableImages.forEach(img => {
+    const card = document.createElement("div");
+    card.className = "image-card";
+    card.dataset.id = img.id;
+    const src = makeSVGDataURL(img.label, img.svgColor, img.emoji);
+    card.innerHTML = `<img src="${src}" alt="${img.label}"><div class="card-label">${img.label}</div>`;
+    card.addEventListener("click", () => onCardClick(card, img.id, role));
+    container.appendChild(card);
+  });
+}
+
+function onCardClick(card, imgId, role) {
+  if (card.classList.contains("disabled")) return;
+  if (role === "first") { clearSelection("grid-first"); selectedFirst = imgId; }
+  else { clearSelection("grid-second"); selectedSecond = imgId; }
+  card.classList.add("selected");
+  updateDisabledState();
+  updateConfirmButton();
+}
+
+function clearSelection(gridId) {
+  document.querySelectorAll(`#${gridId} .image-card`).forEach(c => c.classList.remove("selected"));
+}
+
+function updateDisabledState() {
+  document.querySelectorAll(".image-card").forEach(c => c.classList.remove("disabled"));
+  if (selectedFirst) {
+    document.querySelectorAll(`#grid-second .image-card`).forEach(c => {
+      if (c.dataset.id === selectedFirst) c.classList.add("disabled");
+    });
+  }
+  if (selectedSecond) {
+    document.querySelectorAll(`#grid-first .image-card`).forEach(c => {
+      if (c.dataset.id === selectedSecond) c.classList.add("disabled");
+    });
+  }
+}
+
+function getLabelById(id) {
+  const img = siteConfig.selectableImages.find(i => i.id === id);
+  return img ? img.label : id;
+}
+
+function updateConfirmButton() {
+  const btn = document.getElementById("confirm-btn");
+  const hint = document.getElementById("selection-hint");
+  if (selectedFirst && selectedSecond) {
+    btn.disabled = false;
+    hint.textContent = `已选择：${getLabelById(selectedFirst)} + ${getLabelById(selectedSecond)}`;
+  } else if (selectedFirst) {
+    btn.disabled = true;
+    hint.textContent = `已选第一个：${getLabelById(selectedFirst)}，请继续选择第二个`;
+  } else if (selectedSecond) {
+    btn.disabled = true;
+    hint.textContent = `已选第二个：${getLabelById(selectedSecond)}，请继续选择第一个`;
+  } else {
+    btn.disabled = true;
+    hint.textContent = "请先选择两张不同的图片";
+  }
+}
+
+function findRule(id1, id2) {
+  return siteConfig.rules.find(r =>
+    (r.input1 === id1 && r.input2 === id2) || (r.input1 === id2 && r.input2 === id1)
+  );
+}
+
+document.getElementById("confirm-btn").addEventListener("click", () => {
+  const rule = findRule(selectedFirst, selectedSecond);
+  const resultSection = document.getElementById("result-section");
+  const resultImage = document.getElementById("result-image");
+  const resultMessage = document.getElementById("result-message");
+  if (rule) {
+    resultMessage.textContent = rule.message || "找到结果！";
+    resultImage.src = makeSVGDataURL(`${getLabelById(rule.input1)}+${getLabelById(rule.input2)}`, rule.svgColor, rule.emoji);
+    resultImage.style.display = "block";
+  } else {
+    resultMessage.textContent = siteConfig.defaultMessage;
+    resultImage.style.display = "none";
+  }
+  resultSection.style.display = "block";
+  resultSection.scrollIntoView({ behavior: "smooth", block: "start" });
+});
+
+document.getElementById("reset-btn").addEventListener("click", () => {
+  selectedFirst = null; selectedSecond = null;
+  document.querySelectorAll(".image-card").forEach(c => c.classList.remove("selected","disabled"));
+  document.getElementById("confirm-btn").disabled = true;
+  document.getElementById("selection-hint").textContent = "请先选择两张不同的图片";
+  document.getElementById("result-section").style.display = "none";
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+renderGrid("grid-first", "first");
+renderGrid("grid-second", "second");
+</script>
+</body>
+</html>

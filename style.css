@@ -1,0 +1,239 @@
+/* ===========================
+   全局样式设置
+   =========================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  color: #333;
+}
+
+/* ===========================
+   顶部标题区域
+   =========================== */
+header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+header p {
+  font-size: 1.1em;
+  opacity: 0.9;
+}
+
+/* ===========================
+   主内容区域
+   =========================== */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* ===========================
+   每个步骤区域
+   =========================== */
+.step-section {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.step-section h2 {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  color: #555;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* ===========================
+   图片网格布局
+   =========================== */
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* 每个可选图片卡片 */
+.image-card {
+  cursor: pointer;
+  border: 3px solid transparent;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.25s ease;
+  width: calc(25% - 12px);
+  min-width: 120px;
+  background: #f9f9f9;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.image-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  border-color: #a0aec0;
+}
+
+/* 被选中的图片卡片 */
+.image-card.selected {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102,126,234,0.3);
+  transform: translateY(-3px);
+}
+
+/* 被禁用的图片卡片（已在另一列选中） */
+.image-card.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.image-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+.image-card .card-label {
+  padding: 8px;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #555;
+}
+
+/* ===========================
+   操作按钮区域
+   =========================== */
+.action-area {
+  text-align: center;
+  margin: 25px 0;
+}
+
+#confirm-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 14px 40px;
+  font-size: 1.1em;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 15px rgba(102,126,234,0.4);
+}
+
+#confirm-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102,126,234,0.5);
+}
+
+#confirm-btn:disabled {
+  background: #ccc;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+#selection-hint {
+  margin-top: 10px;
+  color: #888;
+  font-size: 0.95em;
+}
+
+/* ===========================
+   结果区域
+   =========================== */
+.result-section {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.result-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.result-message {
+  font-size: 1.2em;
+  color: #667eea;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#result-image {
+  max-width: 100%;
+  max-height: 450px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+  margin-bottom: 25px;
+}
+
+#reset-btn {
+  background: white;
+  color: #667eea;
+  border: 2px solid #667eea;
+  padding: 12px 35px;
+  font-size: 1em;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+#reset-btn:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ===========================
+   底部页脚
+   =========================== */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+  font-size: 0.9em;
+}
+
+/* ===========================
+   手机端适配
+   =========================== */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6em;
+  }
+
+  .image-card {
+    width: calc(50% - 8px);
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="page-title">图片配对网站</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 页面顶部标题区域 -->
+  <header>
+    <h1 id="site-title">图片配对网站</h1>
+    <p id="site-subtitle">选择两只精灵，看看他们融合后的样子！</p>
+  </header>
+
+  <!-- 主要内容区域 -->
+  <main>
+
+    <!-- 第一步：选择第一张图片 -->
+    <section class="step-section">
+      <h2>第一步：选择第一只精灵</h2>
+      <div class="image-grid" id="grid-first"></div>
+    </section>
+
+    <!-- 第二步：选择第二张图片 -->
+    <section class="step-section">
+      <h2>第二步：选择第二只精灵</h2>
+      <div class="image-grid" id="grid-second"></div>
+    </section>
+
+    <!-- 确认按钮 -->
+    <div class="action-area">
+      <button id="confirm-btn" disabled>查看结果 →</button>
+      <p id="selection-hint">请先选择两只不同的精灵</p>
+    </div>
+
+    <!-- 结果展示区域（初始隐藏） -->
+    <section class="result-section" id="result-section" style="display:none;">
+      <h2>✨ 结果</h2>
+      <p id="result-message" class="result-message"></p>
+      <img id="result-image" src="" alt="结果图片" />
+      <br/>
+      <button id="reset-btn">重新选择</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Prod by Chairen</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
